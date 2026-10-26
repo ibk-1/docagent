@@ -1,0 +1,66 @@
+{
+  "n": 300,
+  "valid_json": 1.0,
+  "exact_match": 0.7433333333333333,
+  "field_accuracy": {
+    "invoice_number": 1.0,
+    "invoice_date": 1.0,
+    "due_date": 1.0,
+    "seller_name": 1.0,
+    "seller_vat_id": 1.0,
+    "buyer_name": 1.0,
+    "currency": 1.0,
+    "net_amount": 1.0,
+    "vat_rate": 1.0,
+    "vat_amount": 0.7433333333333333,
+    "gross_amount": 1.0,
+    "iban": 1.0
+  },
+  "exact_match_by_tag": {
+    "date_text": 0.7395833333333334,
+    "de": 0.8082901554404145,
+    "de_numbers_in_en": 0.7272727272727273,
+    "distractor_dates": 0.7304347826086957,
+    "en": 0.6261682242990654,
+    "layout_de_a": 0.8557692307692307,
+    "layout_de_b": 0.7528089887640449,
+    "layout_en_a": 0.5869565217391305,
+    "layout_en_b": 0.6557377049180327,
+    "reverse_charge": 0.0,
+    "terms_explicit": 0.7037037037037037,
+    "terms_immediate": 0.65,
+    "terms_relative": 0.7796610169491526,
+    "terms_skonto": 0.7777777777777778,
+    "vat_not_printed": 0.0
+  },
+  "median_latency_s": 0.00021425500000304964,
+  "error_examples": {
+    "vat_amount": [
+      {
+        "id": "inv-0004",
+        "gold": "808.12",
+        "pred": null
+      },
+      {
+        "id": "inv-0010",
+        "gold": "4113.29",
+        "pred": null
+      },
+      {
+        "id": "inv-0015",
+        "gold": "1220.19",
+        "pred": null
+      },
+      {
+        "id": "inv-0017",
+        "gold": "858.73",
+        "pred": null
+      },
+      {
+        "id": "inv-0018",
+        "gold": "0.00",
+        "pred": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+[project]
+name = "docagent"
+version = "0.1.0"
+description = "Tool-using LLM agent for extracting structured data from German and English invoices, with a reproducible evaluation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ibrahim Kalil" }]
+dependencies = [
+  "pydantic>=2.6",
+  "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
